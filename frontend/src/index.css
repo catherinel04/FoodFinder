@@ -1,13 +1,14 @@
 :root {
-  --bg: #211a16;
-  --bg-raised: #2b2118;
-  --bg-input: #1a1410;
-  --chalk: #f4ede1;
-  --chalk-dim: #c9bfae;
-  --mustard: #e8a33d;
-  --tomato: #c1502e;
-  --sage: #7c9473;
-  --line: #4a3c30;
+  /* Pink / yellow / white theme */
+  --bg: #fff8fb; /* very pale pink background */
+  --bg-raised: #ffffff; /* cards / raised surfaces */
+  --bg-input: #ffd6ea; /* light pink inputs */
+  --chalk: #e07aa1; /* primary text (dark for contrast) */
+  --chalk-dim: #7a6b6f; /* secondary/muted text */
+  --mustard: #ffd66b; /* warm pastel yellow accent */
+  --tomato: #ff6b6b; /* error / danger */
+  --sage: #7c9473; /* reserved accent (unchanged) */
+  --line: #ffe6f1; /* soft pink borders */
 
   --font-display: "Bebas Neue", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -21,8 +22,8 @@ body {
   margin: 0;
   background: var(--bg);
   background-image:
-    radial-gradient(circle at 15% 10%, rgba(232, 163, 61, 0.06), transparent 40%),
-    radial-gradient(circle at 85% 90%, rgba(193, 80, 46, 0.08), transparent 45%);
+    radial-gradient(circle at 12% 12%, rgba(255, 214, 234, 0.35), transparent 30%),
+    radial-gradient(circle at 88% 88%, rgba(255, 214, 107, 0.14), transparent 40%);
   color: var(--chalk);
   font-family: var(--font-body);
   min-height: 100vh;
@@ -128,7 +129,7 @@ body {
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #f2b559;
+  background: #ffe08a; /* slightly lighter yellow on hover */
 }
 
 .submit-btn:active:not(:disabled) {
